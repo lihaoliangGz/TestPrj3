@@ -19,6 +19,6 @@ class YiiBuilderController extends Controller{
     
     public function actionFormBuilder(){
         $model=new SignupForm();
-        return $this->renderPartial('form-builder',['model'=>$model])
+        return $this->render('form-builder',['model'=>$model]);
     }
 }
